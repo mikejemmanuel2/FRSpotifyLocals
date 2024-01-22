@@ -1,0 +1,85 @@
+.background {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1400vh;
+    width: 1300vw;
+    background: url('Collage.png') repeat;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    animation: diagonal 60s linear infinite;
+}
+@keyframes diagonal {
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(-3840px, -4320px, 0);
+    }
+}
+
+.navBar {
+    top: 1vh;
+    left: 1vw;
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.navBar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.navBar a:hover {
+    background-color: gray;
+    color: black;
+}
+
+.bulletin {
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px groove white;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: auto;
+}
+.bulletin h1{
+    color: lightpink;
+}
+#help-header {
+    color: turquoise;
+}
+
+.playlistsHeader {
+    position: relative;
+    z-index: 1;
+    margin-top: 10vh;
+    text-align: center;
+    color: lightpink;
+    background-color: black;
+    border: 3px groove white;
+}
+.playlistParagraph {
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border: 3px groove white;
+}
+.playlistEmbed {
+    position: relative;
+    z-index: 1;
+    border-radius:12px;
+}
