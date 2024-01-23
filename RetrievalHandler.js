@@ -4,13 +4,7 @@ function setPlaylist() {
     var dataLink = "https://mikejemmanuel.pythonanywhere.com/api/" + playlistName;
     var socket = io.connect(dataLink);
 
-    socket.on('message', function(data) {
-        console.log('Received message:', data.data);
-    });
-    socket.on('update', function(data) {
-        console.log('Received update:', data.message);
-    });
-
+    console.log("Socket Should Have Connected")
     const fetchData = async () => {
         const response = await fetch(dataLink);
     };
@@ -21,3 +15,10 @@ function setPlaylist() {
 
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', setPlaylist);
+
+socket.on('message', function(data) {
+    console.log('Received message:', data.data);
+});
+socket.on('update', function(data) {
+    console.log('Received update:', data.message);
+});
