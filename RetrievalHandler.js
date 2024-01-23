@@ -5,13 +5,11 @@ function setPlaylist() {
     var dataLink = "https://mikejemmanuel.pythonanywhere.com/api/" + playlistName;
     socket = io.connect(dataLink);
 
-    console.log("Socket Should Have Connected")
     const fetchData = async () => {
         const response = await fetch(dataLink);
     };
-    console.log("Going to Fetch")
+    console.log("Starting Fetch")
     fetchData()
-    console.log("Data has been Fetched")
 
     socket.on('message', function(data) {
         console.log('Received message:', data.data);
