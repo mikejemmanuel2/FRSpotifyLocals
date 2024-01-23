@@ -12,14 +12,16 @@ function setPlaylist() {
     console.log("Going to Fetch")
     fetchData()
     console.log("Data has been Fetched")
+
+    socket.on('message', function(data) {
+        console.log('Received message:', data.data);
+    });
+    socket.on('update', function(data) {
+        console.log('Received update:', data.message);
+    });
 }
 
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', setPlaylist);
 
-socket.on('message', function(data) {
-    console.log('Received message:', data.data);
-});
-socket.on('update', function(data) {
-    console.log('Received update:', data.message);
-});
+
