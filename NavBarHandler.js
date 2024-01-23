@@ -19,6 +19,6 @@ function setNavSize() {
     }
 }
 // Call the function on page load
-setNavSize();
+window.addEventListener('load', setNavSize);
 // Call the function when the window is resized
 window.addEventListener('resize', setNavSize);

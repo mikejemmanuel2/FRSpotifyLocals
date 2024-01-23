@@ -11,4 +11,4 @@ function setPlaylist() {
 }
 
 // Call the function on page load
-setPlaylist();
+window.addEventListener('load', setPlaylist);

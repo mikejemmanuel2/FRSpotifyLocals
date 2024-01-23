@@ -19,6 +19,6 @@ function setBulletinSize() {
     }
 }
 // Call the function on page load
-setBulletinSize();
+window.addEventListener('load', setBulletinSize);
 // Call the function when the window is resized
 window.addEventListener('resize', setBulletinSize);
