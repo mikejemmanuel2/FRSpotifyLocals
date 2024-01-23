@@ -3,7 +3,7 @@ function setPlaylist() {
     var playlistName = new URLSearchParams(window.location.search).get('playlist');
     console.log(playlistName)
     var dataLink = "https://mikejemmanuel.pythonanywhere.com/api/" + playlistName;
-    var socket = io.connect(dataLink);
+    socket = io.connect(dataLink);
 
     console.log("Socket Should Have Connected")
     const fetchData = async () => {
