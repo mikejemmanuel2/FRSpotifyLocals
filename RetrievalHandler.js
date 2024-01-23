@@ -7,9 +7,8 @@ function setPlaylist() {
         const response = await fetch(dataLink);
     };
     console.log("Going to Fetch")
-    var jsonData = fetchData()
+    fetchData()
     console.log("Data has been Fetched")
-    console.log(jsonData)
 }
 
 // Call the function on page load

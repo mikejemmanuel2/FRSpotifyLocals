@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d81080-c142-469d-ba38-6d15647405d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/RetrievalHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/RetrievalHandler.js" afterDir="false" />
-    </list>
+    <list default="true" id="37d81080-c142-469d-ba38-6d15647405d7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705910997159</updated>
       <workItem from="1705910998160" duration="920000" />
-      <workItem from="1705964455473" duration="9930000" />
+      <workItem from="1705964455473" duration="10319000" />
     </task>
     <servers />
   </component>
