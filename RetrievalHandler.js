@@ -8,6 +8,7 @@ function setPlaylist() {
         //$('body').append(`<p><a href=${song.name}>${song.name}</a></p>`);
     };
     var jsonData = fetchData()
+    console.log("Data has been fetched")
     console.log(jsonData)
 
     /*
@@ -30,4 +31,4 @@ function setPlaylist() {
 }
 
 // Call the function on page load
-window.addEventListener('load', setPlaylist);
+document.addEventListener('DOMContentLoaded', setPlaylist);
