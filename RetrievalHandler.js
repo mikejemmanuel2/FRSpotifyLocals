@@ -30,4 +30,4 @@ function setPlaylist() {
 }
 
 // Call the function on page load
-document.addEventListener('DOMContentLoaded', setPlaylist);
+window.addEventListener('load', setPlaylist);
