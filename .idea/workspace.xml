@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37d81080-c142-469d-ba38-6d15647405d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retrieval.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retrieval.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RetrievalHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/RetrievalHandler.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +40,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FRSpotifyLocals/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705910997159</updated>
       <workItem from="1705910998160" duration="920000" />
-      <workItem from="1705964455473" duration="5756000" />
+      <workItem from="1705964455473" duration="8108000" />
     </task>
     <servers />
   </component>

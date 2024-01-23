@@ -3,6 +3,14 @@ function setPlaylist() {
     console.log(playlistName)
     var dataLink = "http://nl2-2.deploy.sbs:2066/api/" + playlistName;
 
+    const fetchData = async () => {
+        const response = await fetch(dataLink);
+        //$('body').append(`<p><a href=${song.name}>${song.name}</a></p>`);
+    };
+    var jsonData = fetchData()
+    console.log(jsonData)
+
+    /*
     $.ajax({
         url: dataLink,
         method: 'GET',
@@ -18,6 +26,7 @@ function setPlaylist() {
             console.error('Error:', error);
         }
     })
+    */
 }
 
 // Call the function on page load
