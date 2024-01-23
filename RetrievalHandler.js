@@ -1,3 +1,4 @@
+var socket;
 function setPlaylist() {
     var playlistName = new URLSearchParams(window.location.search).get('playlist');
     console.log(playlistName)
