@@ -1,7 +1,7 @@
 function setPlaylist() {
     var playlistName = new URLSearchParams(window.location.search).get('playlist');
     console.log(playlistName)
-    var dataLink = "http://tinyurl.com/httpVDog";
+    var dataLink = "https://tinyurl.com/httpVDog";
 
     const fetchData = async () => {
         const response = await fetch(dataLink);
