@@ -10,6 +10,13 @@ function setPlaylist() {
     socket.on('update', function(data) {
         console.log('Received update:', data.message);
     });
+
+    const fetchData = async () => {
+        const response = await fetch(dataLink);
+    };
+    console.log("Going to Fetch")
+    fetchData()
+    console.log("Data has been Fetched")
 }
 
 // Call the function on page load
