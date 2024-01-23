@@ -63,7 +63,7 @@
 .playlistsHeader {
     position: relative;
     z-index: 1;
-    margin-top: 10vh;
+    margin-top: 80px;
     text-align: center;
     color: lightpink;
     background-color: black;
@@ -82,4 +82,9 @@
     position: relative;
     z-index: 1;
     border-radius:12px;
+}
+
+.dropbox-embed{
+    position: relative;
+    z-index: 1;
 }

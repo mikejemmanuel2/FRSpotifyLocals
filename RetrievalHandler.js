@@ -1,3 +1,4 @@
+/*
 var socket;
 function setPlaylist() {
     var playlistName = new URLSearchParams(window.location.search).get('playlist');
@@ -14,5 +15,5 @@ function setPlaylist() {
 
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', setPlaylist);
-
+*/
 

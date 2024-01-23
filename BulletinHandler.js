@@ -18,7 +18,16 @@ function setBulletinSize() {
         });
     }
 }
+function setPlaylistHeader() {
+    if (window.innerWidth > window.innerHeight) {
+        document.querySelector('.playlistsHeader').style.fontSize = (1.5 / 100) * window.innerWidth + 'px';
+    } else {
+        document.querySelector('.playlistsHeader').style.fontSize = (2 / 100) * window.innerHeight + 'px';
+    }
+}
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', setBulletinSize);
+document.addEventListener('DOMContentLoaded', setPlaylistHeader);
 // Call the function when the window is resized
 window.addEventListener('resize', setBulletinSize);
+window.addEventListener('resize', setPlaylistHeader);
