@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Main Style.css">
     <script type="text/javascript" src="BulletinHandler.js"></script>
     <script type="text/javascript" src="NavBarHandler.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="RetrievalHandler.js"></script>
     <title>FR Spotify Locals (Retrieval)</title>
     <meta name="description" content="Local File Retriever for Filthy Regular's Spotify Playlist">
@@ -23,8 +24,5 @@
 
     <h1 class="playlistsHeader">Click on a song to preview it</h1>
 
-    {% for song in songsList %}
-    <p><a href={{ song.previewLink }}></a>{{ song.name }}</p>
-    {% endfor %}
 </body>
 </html>
