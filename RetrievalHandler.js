@@ -5,29 +5,11 @@ function setPlaylist() {
 
     const fetchData = async () => {
         const response = await fetch(dataLink);
-        //$('body').append(`<p><a href=${song.name}>${song.name}</a></p>`);
     };
+    console.log("Going to Fetch")
     var jsonData = fetchData()
-    console.log("Data has been fetched")
+    console.log("Data has been Fetched")
     console.log(jsonData)
-
-    /*
-    $.ajax({
-        url: dataLink,
-        method: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            // Handle the data returned from the Flask server
-            data.result.forEach(function(song) {
-                // Access song properties and display them as needed
-                $('body').append(`<p><a href=${song.name}>${song.name}</a></p>`);
-            });
-        },
-        error: function(error) {
-            console.error('Error:', error);
-        }
-    })
-    */
 }
 
 // Call the function on page load
