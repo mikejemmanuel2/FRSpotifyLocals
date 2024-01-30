@@ -26,6 +26,7 @@ for (let i = 0; i < songNames.length; i++) {
     var node = document.createElement("a")
     node.href = songPreviews[i]
     node.text = songNames[i]
+    node.target = "_blank"
     paragraph.appendChild(node)
     const textBox = document.getElementById("playlistParagraphs")
     textBox.appendChild(paragraph)

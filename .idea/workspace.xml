@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="37d81080-c142-469d-ba38-6d15647405d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Main Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PreviewHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/PreviewHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Previews.html" beforeDir="false" afterPath="$PROJECT_DIR$/Previews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JavaScript Debug.Playlists.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Playlists.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FRSpotifyLocals/Playlists.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -82,9 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.Playlists.html" />
         <item itemvalue="Python.main" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +109,7 @@
       <workItem from="1706407529423" duration="3481000" />
       <workItem from="1706441293986" duration="2676000" />
       <workItem from="1706507400086" duration="8510000" />
-      <workItem from="1706565719864" duration="21194000" />
+      <workItem from="1706565719864" duration="22126000" />
     </task>
     <servers />
   </component>
