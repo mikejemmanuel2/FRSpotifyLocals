@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d81080-c142-469d-ba38-6d15647405d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Back-End/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/.idea/Back-End.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chill_(V-Dog).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hyper_(V-Dog).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PreviewHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V-Dog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulletinHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/BulletinHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/DBXAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/DBXAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Main Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Playlists.html" beforeDir="false" afterPath="$PROJECT_DIR$/Playlists.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retrieval.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retrieval.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RetrievalHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/RetrievalHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retrieval.html" beforeDir="false" afterPath="$PROJECT_DIR$/Previews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RetrievalHandler.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -30,7 +44,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.Playlists.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -41,15 +57,46 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Playlists.html">
+    <configuration name="Playlists.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FRSpotifyLocals/Playlists.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FRSpotifyLocals/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FRSpotifyLocals" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Back-End" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Back-End/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Playlists.html" />
+        <item itemvalue="Python.main" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -70,11 +117,21 @@
       <option name="presentableId" value="Default" />
       <updated>1705910997159</updated>
       <workItem from="1705910998160" duration="920000" />
-      <workItem from="1705964455473" duration="31481000" />
+      <workItem from="1705964455473" duration="32160000" />
+      <workItem from="1706312254476" duration="1985000" />
+      <workItem from="1706316945021" duration="157000" />
+      <workItem from="1706317121600" duration="10200000" />
+      <workItem from="1706407529423" duration="3481000" />
+      <workItem from="1706441293986" duration="2676000" />
+      <workItem from="1706507400086" duration="8510000" />
+      <workItem from="1706565719864" duration="16713000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FRSpotifyLocals$main.coverage" NAME="main Coverage Results" MODIFIED="1706441470264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End" />
   </component>
 </project>
