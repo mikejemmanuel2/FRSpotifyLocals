@@ -94,10 +94,10 @@
     width: 60vw;
     margin: 0 auto;
 }
-.songParagraph p {
+.songParagraph a {
     font-size: 24px;
     margin-top: 5.5vh;
-    text-align: -moz-left;
+    justify-content: center;
 }
 .songParagraph audio {
     width: 50vw;

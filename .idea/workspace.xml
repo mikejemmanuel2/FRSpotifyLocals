@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d81080-c142-469d-ba38-6d15647405d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Back-End/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/.idea/Back-End.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chill_(V-Dog).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyper_(V-Dog).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PreviewHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V-Dog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/DBXAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/DBXAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Main Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playlists.html" beforeDir="false" afterPath="$PROJECT_DIR$/Playlists.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retrieval.html" beforeDir="false" afterPath="$PROJECT_DIR$/Previews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RetrievalHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PreviewHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/PreviewHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Previews.html" beforeDir="false" afterPath="$PROJECT_DIR$/Previews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +111,7 @@
       <workItem from="1706407529423" duration="3481000" />
       <workItem from="1706441293986" duration="2676000" />
       <workItem from="1706507400086" duration="8510000" />
-      <workItem from="1706565719864" duration="16713000" />
+      <workItem from="1706565719864" duration="21194000" />
     </task>
     <servers />
   </component>
