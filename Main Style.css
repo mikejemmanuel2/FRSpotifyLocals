@@ -103,6 +103,29 @@
     width: 50vw;
 }
 
+.downloadToolBox {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 3px groove white;
+    width: 75vw;
+    margin-left: 12.5vw;
+    font-size: 24px;
+}
+.downloadInstructions {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: lightpink;
+    background-color: black;
+    border: 3px groove white;
+    width: 75vw;
+    margin-left: 12.5vw;
+    font-size: 24px;
+}
+
 .dropbox-embed{
     position: relative;
     z-index: 1;

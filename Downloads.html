@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Main Style.css">
+    <script type="text/javascript" src="NavBarHandler.js"></script>
+    <script type="text/javascript" src="BulletinHandler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <title>FR Spotify Locals (Download)</title>
+    <meta name="description" content="Download tool for Filthy Regular's Spotify Playlist Local Files">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="navBar">
+      <a href="index.html">Home</a>
+      <a href="https://open.spotify.com/user/uoq3x4vdvezpedk8urz2f8d86?si=b5dc6a7302ce48b8" target="_blank">Spotify</a>
+      <a href="Playlists.html">Playlists</a>
+      <a href="Help.html">Help</a>
+    </div>
+
+    <h1 class="playlistsHeader">This tool will check folders of your choosing for mp3 files from this playlist. <br>
+        This is done to automate the download of songs you are missing. <br>
+        Choose a folder then click "Search". You can repeat with many folders. <br>
+        When you are ready, "Download" will download a zip file of all the songs you are missing.</h1>
+
+
+    <div class="downloadToolBox" id="downloadToolBox">
+        <label for="folderInput">Select a folder:</label>
+        <input type="file" id="folderInput" webkitdirectory directory multiple />
+        <button onclick="resetData()">Reset</button>
+        <button onclick="searchFolderContents()">Search</button>
+        <button onclick="downloadMissingSongs()">Download</button>
+        <script type="text/javascript" src="DownloadHandler.js"></script>
+    </div>
+    <div class="downloadInstructions">
+        <p>After you download the songs with the tool, follow these instructions.</p>
+        <p>1. Open Spotify, Click on your Profile Picture, Click Settings.</p>
+        <p>2. Look for "Your Library" or "Local Files" Header. </p>
+        <p>3. Enable "Show Local Files" or "Show Audio from this Device"</p>
+        <p>4. If you have not, extract the zipped download into a folder of you choosing. Remember that folder path.</p>
+        <p>5. (On PC Spotify) In Settings look for "Show Songs From" Header.</p>
+        <p>6. (On PC Spotify) Click "Add a Source" then point that to the folder from step 4.</p>
+        <p>7. In Your Library you should now have "Local Files" available. If not, Restart Spotify.</p>
+        <p>8. Go to my Spotify Playlist that you downloaded for. (A link to my spotify is in the header of the site)</p>
+        <p>9. Click Download. You are now done, Enjoy!</p>
+    </div>
+</body>
+</html>
