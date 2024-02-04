@@ -133,6 +133,7 @@ async function downloadMissingSongs() {
                 var link = document.createElement('a');
                 link.href = URL.createObjectURL(content);
                 link.download = "MissingSongs.zip";
+                link.target = "_blank"
                 link.textContent = "If on IOS or download wont start, Click Here";
                 link.click();
 
