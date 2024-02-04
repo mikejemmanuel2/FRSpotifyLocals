@@ -127,6 +127,8 @@ async function downloadMissingSongs() {
         textBox.removeChild(textBox.lastElementChild)
         paragraph.innerText = "Loading Complete." + "\n" + "Downloading Playlist Zip File." + "\n"
         textBox.appendChild(paragraph)
+        var patience = document.createElement("p").innerText = ("Please Wait...");
+        textBox.appendChild(patience)
 
         zip.generateAsync({ type: "blob" })
             .then(content => {
@@ -137,6 +139,7 @@ async function downloadMissingSongs() {
                 link.textContent = "If on IOS or download wont start, Click Here";
                 link.click();
 
+                textBox.removeChild(textBox.lastElementChild)
                 textBox.removeChild(textBox.lastElementChild)
                 paragraph.appendChild(link);
                 textBox.appendChild(paragraph)
