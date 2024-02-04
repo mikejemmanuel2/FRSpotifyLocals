@@ -119,7 +119,7 @@ async function downloadMissingSongs() {
 
         console.log("All fetch promises resolved. Generating Zip");
         textBox.removeChild(textBox.lastElementChild)
-        paragraph.innerText = "Loading Complete." + "\n" + "Downloading Playlist Zip File."
+        paragraph.innerText = "Loading Complete." + "\n" + "Downloading Playlist Zip File." + "\n"
         textBox.appendChild(paragraph)
 
         zip.generateAsync({ type: "blob" })
@@ -127,7 +127,12 @@ async function downloadMissingSongs() {
                 var link = document.createElement('a');
                 link.href = URL.createObjectURL(content);
                 link.download = "MissingSongs.zip";
+                link.textContent = "If on IOS or download wont start, Click Here";
                 link.click();
+
+                textBox.removeChild(textBox.lastElementChild)
+                paragraph.appendChild(link);
+                textBox.appendChild(paragraph)
             });
 
         console.log("Done");
