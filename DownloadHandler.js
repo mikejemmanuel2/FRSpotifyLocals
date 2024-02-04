@@ -91,31 +91,37 @@ async function downloadMissingSongs() {
         var zip = new JSZip();
         var fileCount = 0
 
-        for (var i = 0; i < missingSongs.length; i++) {
-            var songName = missingSongs[i];
-            var downloadURL = missingSongsDL[i];
+        // Create an array of Promises for fetching each file
+        var fetchPromises = missingSongsDL.map(async (downloadURL, index) => {
+            async function attemptZipAdd()  {
+                try {
+                    // Replace www.dropbox.com with dl.dropboxusercontent.com
+                    downloadURL = downloadURL.replace("www.dropbox.com", "dl.dropboxusercontent.com");
 
-            // Replace www.dropbox.com with dl.dropboxusercontent.com
-            downloadURL = downloadURL.replace("www.dropbox.com", "dl.dropboxusercontent.com");
+                    // Await the result of each fetch call
+                    const response = await fetch(downloadURL);
+                    const blob = await response.blob();
+                    fileCount++;
+                    var songsLeft = missingSongs.length - fileCount;
 
-            try {
-                // Await the result of each fetch call
-                const response = await fetch(downloadURL);
-                const blob = await response.blob();
-                fileCount++
-                var songsLeft = missingSongs.length - fileCount
+                    zip.file(missingSongs[index], blob);
+                    console.log("Missing Song Processed");
 
-                zip.file(songName, blob);
-                console.log("Missing Song Processed");
-
-                textBox.removeChild(textBox.lastElementChild)
-                paragraph.innerText = songsLeft + " songs left to load." + "\n" + "Please Wait."
-                textBox.appendChild(paragraph)
-
-            } catch (error) {
-                console.error("Error fetching song:", error);
+                    // Update UI
+                    textBox.removeChild(textBox.lastElementChild);
+                    paragraph.innerText = songsLeft + " songs left to load." + "\n" + "Please Wait.";
+                    textBox.appendChild(paragraph);
+                } catch (error) {
+                    console.error("Error fetching song:", error);
+                    await attemptZipAdd();
+                }
             }
-        }
+            await attemptZipAdd();
+        });
+
+        // Wait for all fetch operations to complete
+        await Promise.all(fetchPromises)
+
 
         console.log("All fetch promises resolved. Generating Zip");
         textBox.removeChild(textBox.lastElementChild)
