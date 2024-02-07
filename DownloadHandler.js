@@ -1,6 +1,7 @@
 var ownedSongs = []
 var playlistName = new URLSearchParams(window.location.search).get('playlist');
 var filePath = playlistName + '.txt'
+var zipDownload = None
 
 const request = new XMLHttpRequest();
 request.open("GET", filePath, false);
@@ -24,8 +25,25 @@ songNames.pop(songNames.length - 1)
 var missingSongs = songNames.slice()
 var missingSongsDL = songDownloads.slice()
 
+if (playlistName == "V-Dog") {
+    zipDownload = "https://www.dropbox.com/scl/fi/85nwau97lu6sxxe4i9sog/V-Dog.zip?rlkey=o4tiybzg0j5cfkjxaqsd1srse&dl=1"
+} else if (playlistName == "Hyper_(V-Dog)") {
+    zipDownload = "https://www.dropbox.com/scl/fi/uh54orlx1b7xb3q0z8pst/Hyper_-V-Dog.zip?rlkey=ywlmhb31ioq705sgsf2tu05q2&dl=1"
+} else if (playlistName == "Chill_(V-Dog)") {
+    zipDownload = "https://www.dropbox.com/scl/fi/n6cl07pl5gybmdl8s8q33/Chill_-V-Dog.zip?rlkey=41qvqznlap3fx3dabug3r18wt&dl=1"
+}
+
 const textBox = document.getElementById("downloadToolBox")
 var paragraph = document.createElement("p");
+var link = document.createElement('a');
+link.href = zipDownload;
+link.download = "MissingSongs.zip";
+link.target = "_blank"
+link.textContent = "Download All Playlist's Songs";
+paragraph.appendChild(link);
+textBox.appendChild(paragraph)
+paragraph.removeChild(link);
+
 textBox.appendChild(paragraph)
 paragraph.innerText = missingSongs.length + " songs to download." + "\n" + "Please provide folders that have playlist mp3 files"
 textBox.appendChild(paragraph)
@@ -137,13 +155,14 @@ async function downloadMissingSongs() {
                 link.href = URL.createObjectURL(content);
                 link.download = "MissingSongs.zip";
                 link.target = "_blank"
-                link.textContent = "If on IOS or download wont start, Click Here";
+                link.textContent = "If download wont start, Click Here";
                 link.click();
 
                 textBox.removeChild(textBox.lastElementChild)
                 textBox.removeChild(textBox.lastElementChild)
                 paragraph.appendChild(link);
                 textBox.appendChild(paragraph)
+                paragraph.removeChild(link);
             });
 
         console.log("Done");
