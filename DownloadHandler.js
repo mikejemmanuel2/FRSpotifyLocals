@@ -1,7 +1,6 @@
 var ownedSongs = []
 var playlistName = new URLSearchParams(window.location.search).get('playlist');
 var filePath = playlistName + '.txt'
-var zipDownload = []
 
 const request = new XMLHttpRequest();
 request.open("GET", filePath, false);
@@ -38,9 +37,7 @@ if (playlistName == "V-Dog") {
 link.download = "MissingSongs.zip";
 link.target = "_blank"
 link.textContent = "Download All Playlist's Songs";
-paragraph.appendChild(link);
-textBox.appendChild(paragraph)
-paragraph.removeChild(link);
+textBox.appendChild(link)
 
 textBox.appendChild(paragraph)
 paragraph.innerText = missingSongs.length + " songs to download." + "\n" + "Please provide folders that have playlist mp3 files"
@@ -81,11 +78,11 @@ function searchFolderContents() {
 
         textBox.removeChild(textBox.lastElementChild)
         paragraph.innerText = missingSongs.length + " songs to download."
-            if (missingSongs.length != 0) {
-                paragraph.innerText += "\n" + "Are there any mp3 files in folders you missed?"
-            } else {
-                paragraph.innerText += "\n" + "You are not missing any songs from this Playlist."
-            }
+        if (missingSongs.length != 0) {
+            paragraph.innerText += "\n" + "Are there any mp3 files in folders you missed?"
+        } else {
+            paragraph.innerText += "\n" + "You are not missing any songs from this Playlist."
+        }
         textBox.appendChild(paragraph)
         //Next up. Send Missing Song Names and ask if they want to download
     } else {
