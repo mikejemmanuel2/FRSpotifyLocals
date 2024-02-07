@@ -1,7 +1,7 @@
 var ownedSongs = []
 var playlistName = new URLSearchParams(window.location.search).get('playlist');
 var filePath = playlistName + '.txt'
-var zipDownload = None
+var zipDownload = ""
 
 const request = new XMLHttpRequest();
 request.open("GET", filePath, false);
