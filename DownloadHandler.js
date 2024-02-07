@@ -1,7 +1,7 @@
 var ownedSongs = []
 var playlistName = new URLSearchParams(window.location.search).get('playlist');
 var filePath = playlistName + '.txt'
-var zipDownload = ""
+var zipDownload = []
 
 const request = new XMLHttpRequest();
 request.open("GET", filePath, false);
@@ -26,17 +26,17 @@ var missingSongs = songNames.slice()
 var missingSongsDL = songDownloads.slice()
 
 if (playlistName == "V-Dog") {
-    zipDownload = "https://www.dropbox.com/scl/fi/85nwau97lu6sxxe4i9sog/V-Dog.zip?rlkey=o4tiybzg0j5cfkjxaqsd1srse&dl=1"
+    zipDownload.push("https://www.dropbox.com/scl/fi/85nwau97lu6sxxe4i9sog/V-Dog.zip?rlkey=o4tiybzg0j5cfkjxaqsd1srse&dl=1")
 } else if (playlistName == "Hyper_(V-Dog)") {
-    zipDownload = "https://www.dropbox.com/scl/fi/uh54orlx1b7xb3q0z8pst/Hyper_-V-Dog.zip?rlkey=ywlmhb31ioq705sgsf2tu05q2&dl=1"
+    zipDownload.push("https://www.dropbox.com/scl/fi/uh54orlx1b7xb3q0z8pst/Hyper_-V-Dog.zip?rlkey=ywlmhb31ioq705sgsf2tu05q2&dl=1")
 } else if (playlistName == "Chill_(V-Dog)") {
-    zipDownload = "https://www.dropbox.com/scl/fi/n6cl07pl5gybmdl8s8q33/Chill_-V-Dog.zip?rlkey=41qvqznlap3fx3dabug3r18wt&dl=1"
+    zipDownload.push("https://www.dropbox.com/scl/fi/n6cl07pl5gybmdl8s8q33/Chill_-V-Dog.zip?rlkey=41qvqznlap3fx3dabug3r18wt&dl=1")
 }
 
 const textBox = document.getElementById("downloadToolBox")
 var paragraph = document.createElement("p");
 var link = document.createElement('a');
-link.href = zipDownload;
+link.href = zipDownload[0];
 link.download = "MissingSongs.zip";
 link.target = "_blank"
 link.textContent = "Download All Playlist's Songs";
